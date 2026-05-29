@@ -65,7 +65,7 @@ export const AllPosts = ({ data }) => {
                 </div>
 
                 <Link
-                  to={`/post/${idx + 1}`}
+                  to={`/post/${post.id}`}
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 bg-gray-900 text-white text-xs font-medium tracking-wider px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors no-underline"
                 >

@@ -6,7 +6,7 @@ export const PostDetails = ({ posts }) => {
 
   const { id } = useParams();
 
-  const matchingPost = posts.find((post, idx) => idx + 1 === Number(id));
+  const matchingPost = posts.find((post) => post.id === Number(id));
 
   return (
     <div className="w-full min-h-screen bg-gray-50">
