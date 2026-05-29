@@ -1,44 +1,52 @@
 # 📝 Multi-Page Blog App
 
-> A full-featured blog app frontend built with React,
-> demonstrating prop drilling, destructuring, React Router, API handling, and Custom Hooks.
+> A modern multi-page developer blog application built with React, featuring dynamic routing, category-based filtering, reusable components, API integration, and responsive UI design.
+
+---
 
 ## 📸 Screenshots
 
 ![Home Page](image.png)
-![Article Page](image-1.png)
-![Responsive Design](image-2.png)
+![Post Details](image-1.png)
+![Categories Page](image-2.png)
 
 ---
 
 ## ✨ Features
 
-* 📖 Browse blog articles from the DEV.to API
-* 🔀 Dynamic routing using React Router DOM
-* 📄 Click on any article card to read the full article
-* ⚡ Reusable custom hook for API fetching
-* 📱 Fully responsive design
-* 🎨 Modern blog-style UI
+* 📖 Browse real-time developer articles from the DEV.to API
+* 🔀 Dynamic routing with React Router DOM
+* 🏷️ Category-based article filtering
+* 📂 Dedicated categories page
+* 🔎 Dynamic tag navigation using URL params
+* ⚡ Custom reusable hook for API fetching
+* 🎨 Fully responsive modern UI with Tailwind CSS
+* 📄 Individual article detail pages
+* 🌈 Dynamic category colors & icons
+* 📱 Mobile-friendly layout
+* 🚀 Smooth hover animations and transitions
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology          | Purpose      |
-| ------------------- | ------------ |
-| React 18            | UI Library   |
-| React Router DOM v6 | Navigation   |
-| Axios               | API Requests |
-| Tailwind CSS        | Styling      |
-| Vite                | Build Tool   |
+| Technology          | Purpose              |
+| ------------------- | -------------------- |
+| React 18            | UI Library           |
+| React Router DOM v6 | Routing & Navigation |
+| Axios               | API Requests         |
+| Tailwind CSS        | Styling              |
+| Vite                | Build Tool           |
 
 ---
 
 ## 🌐 API Used
 
-DEV.to Articles API
+### DEV.to Articles API
 
+```bash
 https://dev.to/api/articles
+```
 
 ---
 
@@ -64,21 +72,26 @@ src/
 ├── main.jsx
 ├── UseFetch.jsx
 ├── index.css
-└── components/
-    ├── Navbar/
-    │   ├── Navbar.jsx
-    │   ├── Left/
-    │   │   └── Logo.jsx
-    │   └── Right/
-    │       ├── RightNav.jsx
-    │       ├── NavLink.jsx
-    │       └── ThemeBtn.jsx
-    │
-    └── Posts/
-        ├── AllPosts.jsx
-        ├── PostDetails.jsx
-        └── PostHead/
-            └── PostHead.jsx
+│
+├── components/
+│   ├── Navbar/
+│   │   ├── Navbar.jsx
+│   │   ├── Left/
+│   │   │   └── Logo.jsx
+│   │   └── Right/
+│   │       ├── RightNav.jsx
+│   │       ├── NavLink.jsx
+│   │       └── ThemeBtn.jsx
+│   │
+│   └── Posts/
+│       ├── AllPosts.jsx
+│       ├── PostDetails.jsx
+│       ├── CategoryPosts.jsx
+│       └── PostHead/
+│           └── PostHead.jsx
+│
+└── pages/
+    └── Categories.jsx
 ```
 
 ---
@@ -86,10 +99,33 @@ src/
 ## 🧠 What I Learned
 
 * Creating reusable Custom Hooks
-* Parameterized Routing
-* Prop Drilling
-* API Handling with Axios
+* Dynamic & Parameterized Routing
+* API Handling using Axios
+* Filtering data using tags
+* Category-based navigation
 * Component Reusability
-* Navigation using React Router
+* Prop Drilling
 * Conditional Rendering
-* Responsive UI Design
+* Responsive Design Principles
+* Modern UI structuring with Tailwind CSS
+* Working with dynamic route params using `useParams()`
+
+---
+
+## 🚀 Future Improvements
+
+* 🌙 Dark Mode
+* 🔍 Search Functionality
+* 📌 Bookmark Articles
+* ❤️ Like System
+* 📄 Pagination / Infinite Scroll
+* 🔐 Authentication
+* 💬 Comments Section
+
+---
+
+## 👨‍💻 Author
+
+**Abhishek Singh**
+
+Frontend Developer passionate about React, UI design, and modern web development.
