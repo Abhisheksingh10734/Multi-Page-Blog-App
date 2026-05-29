@@ -4,6 +4,9 @@ import { AllPosts } from "./components/Posts/AllPosts";
 import { PostHead } from "./components/Posts/PostHead/PostHead";
 import { PostDetails } from "./components/PostDetails";
 import useFetch from "./useFetch.jsx";
+import { NotFound } from "./NotFound.jsx";
+import { Categories } from "./Categories.jsx";
+import { CategoryPosts } from "./CategoryPosts.jsx";
 
 const App = () => {
 
@@ -22,24 +25,48 @@ const App = () => {
   return (
     <div className="w-full min-h-screen bg-gray-50">
 
-      <Navbar />
-      <PostHead />
 
       <Routes>
-        <Route path="/" element={<AllPosts data={posts} />} />
+        <Route
+          path="/"
+          element={
+            <>
+            <Navbar />
+              <PostHead />
+              <AllPosts data={posts} />
+            </>
+          }
+        />
+
+        <Route
+          path="/categories/:tag"
+          element={
+            <>
+            <Navbar />
+              <PostHead />
+              <CategoryPosts data={posts} />
+            </>
+          }
+        />
 
         <Route
           path="/post/:id"
-          element={<PostDetails posts={posts} />}
+          element={
+            <>
+            <Navbar />
+          <PostDetails posts={posts}/>
+          </>
+         }
         />
 
         <Route
           path="*"
-          element={
-            <div style={{ textAlign: "center", padding: "50px" }}>
-              <h2>404 — Page nahi mila! 😅</h2>
-            </div>
-          }
+          element={<NotFound />}
+        />
+
+        <Route
+          path="/categories"
+          element={<Categories posts={posts} />}
         />
       </Routes>
 
