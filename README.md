@@ -1,16 +1,95 @@
-# React + Vite
+# 📝 Multi-Page Blog App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A full-featured blog app frontend built with React,
+> demonstrating prop drilling, destructuring, React Router, API handling, and Custom Hooks.
 
-Currently, two official plugins are available:
+## 📸 Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Home Page](image.png)
+![Article Page](image-1.png)
+![Responsive Design](image-2.png)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+* 📖 Browse blog articles from the DEV.to API
+* 🔀 Dynamic routing using React Router DOM
+* 📄 Click on any article card to read the full article
+* ⚡ Reusable custom hook for API fetching
+* 📱 Fully responsive design
+* 🎨 Modern blog-style UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+| Technology          | Purpose      |
+| ------------------- | ------------ |
+| React 18            | UI Library   |
+| React Router DOM v6 | Navigation   |
+| Axios               | API Requests |
+| Tailwind CSS        | Styling      |
+| Vite                | Build Tool   |
+
+---
+
+## 🌐 API Used
+
+DEV.to Articles API
+
+https://dev.to/api/articles
+
+---
+
+## ⚙️ Run Locally
+
+```bash
+git clone https://github.com/Abhisheksingh10734/Multi-Page-Blog-App.git
+
+cd Multi-Page-Blog-App
+
+npm install
+
+npm run dev
+```
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+├── App.jsx
+├── main.jsx
+├── UseFetch.jsx
+├── index.css
+└── components/
+    ├── Navbar/
+    │   ├── Navbar.jsx
+    │   ├── Left/
+    │   │   └── Logo.jsx
+    │   └── Right/
+    │       ├── RightNav.jsx
+    │       ├── NavLink.jsx
+    │       └── ThemeBtn.jsx
+    │
+    └── Posts/
+        ├── AllPosts.jsx
+        ├── PostDetails.jsx
+        └── PostHead/
+            └── PostHead.jsx
+```
+
+---
+
+## 🧠 What I Learned
+
+* Creating reusable Custom Hooks
+* Parameterized Routing
+* Prop Drilling
+* API Handling with Axios
+* Component Reusability
+* Navigation using React Router
+* Conditional Rendering
+* Responsive UI Design
